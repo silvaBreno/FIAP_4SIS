@@ -1,0 +1,55 @@
+Boas vindas do Professor Jaci
+Email: pf1388@fiap.com.br
+
+- Trabalha no ministério da Justiça
+
+Iremos utilizar Linux para o desenvolvimento do ano.
+
+Segundo semestre iremos trabalhar com o foco em celulares.
+
+Revisar conexões e portas que o SQL, Sistema de Mensageria, Postgres e protocolo HTTP; 
+
+Segurança Cibernética precisa proteger sistemas, redes e programas.
+
+	Conceitos Fundamentais:
+	
+		- Explicação de termos-chave: malware, phishing, ransomware, ataques de negação de serviço (DDoS), entre outros. 
+		- Visão Geral dos principios da cybersegurança: confidencialidade, integridade e disponibilidade (CID);
+
+		**Malware** é capaz de realizar sequestro de dados (ex: ); Eles criptografam os dados;
+		**Phishing** é uma técnica de fraude online utilizada por criminosos para roubar senhas de banco e outras informações pessoais.
+		A expressão phishing vem da palavra em inglês "fishing", que significa "pescando". Os criminosos usam essa técnica para enganar 
+		as pessoas e fazê-las revelar informações confidenciais ou instalar malware, como ransomware. O phishing é uma tentativa de enganar 
+		alguém para que forneça informações pela internet ou por e-mail que permitam que outra pessoa retire dinheiro de sua conta bancária.
+
+		**Ransomware** é um tipo de software mal-intencionado que ameaça uma vítima destruindo e bloqueando o acesso a dados críticos ou 
+		sistemas até que um resgate seja pago. O ransomware é um tipo de malware de sequestro de dados, feito por meio de criptografia, 
+		que usa como refém arquivos pessoais da própria vítima e cobra resgate para restabelecer o acesso a estes arquivos. 
+		Alguns tipos de ransomware cifram os arquivos do sistema operacional inutilizando o dispositivo e coagindo o usuário a pagar o resgate.
+	
+	Ameaças e Vulnerabilidades:
+	
+		- Pesquisar sobre StuxNet os EUA desenvolveram um vírus para que ele acelerasse a centrifuga de Urânio e impludissem a fábrica de enriquecimento
+		de Urânio que o Irã estava enriquecendo.
+		- Descrição das ameaças cibernéticas mais comuns enfrentadas hoje.
+		- Discussão sobre vulnerabilidades de software e hardware e como elas são exploradas.
+	
+	Medidas de Proteção
+	
+		- Práticas recomendadas para indivíduos e organizações: uso de VPNs, firewalls, sistemas de detecção de intrusão, etc.
+		- Importância das atualizações de segurança e patches.
+	
+	Ferramentas e Tecnologias em Cybersegurança
+	
+		- Visão geral das principais ferramentas e softwares usados na indústria.
+		- O papel da inteligência artificial e machine learning da detecção de ameaças.
+		
+	Aspectos Legais e Éticos
+	
+		- Discussão sobre a ética hacker e o papel dos profissionais de segurança.
+		- Visão geral das leis e regulamentações em CyberSegurança, como GDPR e LGPD (Brasil
+		
+	Futuro da Cubersegurança
+	
+		- Tendências emergentes: computação, quânticas, IoT e Blockchain.
+		- Desafios futuros e a importância da formação contínua em segurança cibernética.
