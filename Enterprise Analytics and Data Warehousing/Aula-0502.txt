@@ -1,0 +1,29 @@
+Professor Fabiano J. Cury Marques
+
+Especialista em Ciência de Dados e Transformação Digital
+
+email: proffabiano.marques@fiap.com.br
+linkedin.com/in/fabianocury
+
+**Conteúdo do Curso**
+
+	**Ementa**
+
+	- Conceitos básicos de Data Warehouse;
+	- Extração de dados de sistemas transacionais;
+	- modelagem multidimensional;
+	- cargas full e incremental;
+	- DW - montagem e manutenção;
+	- Projeto de Data Warehouse;
+
+	**Objetivo**
+
+	- Capacitar o aluno a trabalhar com tecnicas de extração de dados de sistemas transacionais e prepará-los para sua utilização em sistemas
+	de apoio à decisão, utilizando técnicas de data warehouse
+	- O aluno será capaz, ao final do curso, de desenvolver um projeto de DW completo, com a definição das áreas de negóciom modelagem multimensional 
+	e ETL.
+
+	**Referências**
+	 KIMBALL, R., ROSS, M. The Data Warehouse Toolkit. 2ª ed., John Wiley Professional, 2002. 
+	 KIMBALL, R., ROSS, M. The Data Warehouse ETL Toolkit / Pratical Techniques for Extracting, Cleaning, Conforming and Delivering , 1ª ed., 2004
+	 MACHADO, F. N. R. Tecnologia e Projeto de Data Warehouse - 1ª ed., - Sao Paulo: Ed. Érica, 2004
