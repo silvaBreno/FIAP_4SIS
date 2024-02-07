@@ -1,0 +1,44 @@
+Profesor Arnaldo Jr/ Prof. Yan Gabriel Coelho
+
+proyan.coelho@fiap.com.br
+
+Cognitive Computing, Computer Vision and IoT Systems - Sistemas de Informação
+
+Iremos começar com Computer Vision e depois vamos aprofundar em Cognitive Computing e por último IoT Systems;
+
+	• Visão computacional
+		• Processamento de imagens, manipulação, filtros, transformadas… with
+		Python
+	• IA
+		• Machine Learning, classificadores, Aprendizado, DL, redes neurais, 
+		redes convolucionais... Etc. with Python
+	• IoT
+		• Flasher, atuadores, sensores, comunicação... Etc.
+		with C++
+		
+Livros: 
+
+	Progamming Computer Vision with Python - O'Reilly 
+	OpenCV Computer Vision with Python - Joseph Howse
+	
+	
+Objetivos (CV):
+
+	Ao final da disciplina o aluno será capaz de:
+		• Compreender os conceitos de Processamento digital de imagens.
+		• Conhecer as principais técnicas para detecção e segmentação de objetos.
+		• Conhecer e aplicar técnicas de visão computacional.
+		
+Objetivos da Aula:
+
+	•Conhecer o que é uma imagem digital
+	•Conhecer como fazer leitura e exibição de imagens
+	•Conhecer algumas propriedades de imagens
+	•Conhecer canais de cores de imagens
+	
+Representação e visualização de imagem
+	Uma imagem digital nada mais é que uma matriz de linhas e 
+	colunas, onde cada posição desta matriz contém o valor de 
+	um pixel.
+	O valor de cada pixel representa a intensidade de cor naquele 
+	ponto especifico.
