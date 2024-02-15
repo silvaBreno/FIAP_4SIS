@@ -1,0 +1,118 @@
+De maneira geralm é suficiente dar uma caracterização sem ser muito específica:
+
+	Um sistema distribuído é um conjunto de computadores independentes que se apresenta a seus usuários como um sistema  único  e  coerente.
+	
+Middleware
+
+	Uma camada de software que oculta diferenças entre sistemas operacionais diferentes para apresentar o sistema para os usuários de 
+	uma maneira consistente e única.
+	
+	4 soluções de Middleware conquistaram o mercado (2 produtos (DECOM da Microsoft e o outro é o JAVARMI) e 2 padrões de mercado "CORBA e os WEBSERVICES")
+	
+	Um sistema distribuído deve:
+	
+	1. Oferecer fácil acesso a seus recursos; 
+	2. Ocultar razoavelmente bem o fato de que os recursos estão distribuídos por uma rede
+	3. Ser Aberto (padrão aberto)
+	4. Poder ser expandido 
+	
+	**Acesso aos recursos**
+	
+	-> A principal meta de um sistema distribuído é facilitar aos usuários e às aplicações o acesso aos recursos remotos e 
+	seu compartilhamento de maneira controlada e eficiente. Os recursos podem ser muito abrangentes, mas entre os exemplos típicos 
+	estão impressoras laser coloridas, discos RAID com interface SCSI, bases de dados e páginas Web.
+
+	RAID: Redundant Array of Independent Disks 
+	SCSI: Small Computer System Interface
+	
+	Pode ser uma máquina que vai ser utilizada apenas para backup.
+	O objetivo é conectar usuários e recursos também facilita a colaboração e a troca de informações.
+	
+	A conectividade da Internet permite que grupos de pessoas, muito dispersas geograficamente, possam trabalhar juntas por meio de groupware 
+	(software colaborativo): aplicações para edição colaborativa, teleconferência e assim por diante.
+	
+	Exemplo de Groupware: O workspace do Google;
+	
+	**Abertura**
+	
+	Uma meta importante de sistemas distribuídos é a abertura.Um sistema distribuído aberto é um sistema que oferece serviços de acordo com 
+	regras padronizadas que descrevem a sintaxe e a semântica destes serviços. Em geral, os serviços são especificados por meio de interfaces, 
+	que costumam ser descritas em uma linguagem de definição de interface (IDL – Interface Definition Language).
+	
+	o IDL facilita a comunicação entre as várias linguagens de programação. Ele estabelece uma ponte entre sistemas implementados com sistemas 
+	operacionais e/ou linguagens de programação diferentes.
+	
+	Um definição de interface adequadamente especificada deve ser completa e neutra.
+	Completa significa que tudo que é necessário para uma implementação foi, de fato, especificado. 
+	De igual importância é o fato de que as especificações não prescrevam como deve ser a aparência da implementação, elas devem ser neutras.
+
+	Completude e neutralidade são importantes para interoperabilidade e portabilidade.
+	
+	---> Interoperabilidade: caracteriza até que ponto duas implementações de sistemas ou componentes de fornecedores diferentes devem coexistir 
+	e trabalhar em conjunto, com base na confiança mútua nos serviços de cada um, especificados por um padrão comum.
+
+	
+	---> Portabilidade: caracteriza até que ponto uma aplicação desenvolvida para um sistema distribuído A pode ser executada, sem modificação, 
+	em um sistema distribuído B que implementa as mesmas interfaces que A.
+
+	Outra meta importante para um sistema distribuido aberto é que deve ser fácil configurá-lo com base em componentes diferentes.
+	Além disto, deve ser fácil adicionar novos componentes ou substituir os existentes sem afetar os demais componentes. 
+	Ou seja, um sistema distribuído aberto deve ser extensível.
+	
+	**Escalabilidade**
+	A escalabilidade de um sistema pode ser medida segundo, no mínimo, três dimensões. Em primeiro lugar, um sistema pode ser escalável 
+	em relação ao seu tamanho, ou seja, é fácil adicionar mais usuários e recursos ao sistema. Em segundo lugar, um sistema escalável, 
+	em termos geográficos, é um sistema no qual usuários e recursos podem estar longe uns dos outros. Em terceiro lugar, um sistema pode 
+	ser escalável em termos administrativos, isto é, ele pode ser fácil de gerenciar, mesmo que envolva muitas organizações administrativas 
+	diferentes.
+	
+	**Transparência da Distribuição**
+	Um sistema distribuído que é capaz de se apresentar a usuários e aplicações como se fosse um único sistema computacional é denominado 
+	transparente.
+
+	O conceito de transparência pode ser aplicado a diversos aspectos de um sistema distribuído, os mais importantes são mostrados 
+	na tabela a seguir.
+	
+	Imagens raster são bitmaps de imagens: uma grade de pixels individuais que, quando combinados, criam uma imagem inteira.
+
+	Imagens vetoriais são baseadas em fórmulas matemáticas que definem formas geométricas como polígonos, linhas, curvas, círculos e retângulos.
+
+	Transparência de localização refere-se ao fato de que os usuários não podem dizer qual é a localização física de um recurso no sistema.
+	Pode-se conseguir transparência de localização ao se atribuir somente nomes lógicos aos recursos, isto é, nomes nos quais a localização 
+	de um recurso não está secretamente codificada (nomeação). 
+	Um exemplo desse tipo de nome é o URL (Uniform Resource Locator) http://www.fiap.com.br/, que não dá nenhuma pista sobre a localização 
+	do principal servidor Web da FIAP.
+	
+	Diz-se que sistemas distribuídos nos quais recursos podem ser movimentados sem afetar o modo como podem ser acessados proporcionam 
+	transparência de migração. Ainda melhor é a situação na qual recursos podem ser relocados enquanto estão sendo acessados sem que os 
+	usuários ou as aplicações percebam “qualquer coisa”. Nesses casos, diz-se que o sistema suporta transparência de relocação. 
+	Um exemplo é o uso de “notebooks sem fio”, cujos usuários podem continuar a usá-los quando vão de um lugar para outro sem se desconectar.
+	
+	A replicação desempenha um papel importante em sistemas distribuídos. Por exemplo, recursos podem ser replicados para aumentar a disponibilidade
+	ou melhorar o desempenho colocando uma cópia perto do lugar em que ele é acessado. Transparência de replicação está relacionada a ocultar o fato 
+	de que existem várias cópias de um recurso. Para ocultar a replicação dos usuários, é necessário que todas as réplicas tenham o mesmo nome. 
+	Desta forma, geralmente, a transparência de replicação está associada à transparência de localização.
+	
+	No compartilhamento de recursos, há muitos casos de compartilhamento competitivo de recursos. Por exemplo, dois usuários independentes podem 
+	acessar as mesmas tabelas de um banco de dados compartilhado. Nesses casos, é importante que cada usuário não perceba que o outro está 
+	utilizando o mesmo recurso. Essa característica é denominada transparência de concorrência. Uma questão importante é que o acesso concorrente 
+	a um recurso compartilhado deixe esse recurso em estado consistente.
+	
+	Fazer com que um sistema distribuído seja transparente a falha significa fazer com que o usuário não perceba que um recurso (“do qual, 
+	possivelmente, nunca ouviu falar”) deixou de funcionar bem e que, na sequência, o sistema se recuperou da falha. Mascarar falhas é uma das 
+	tarefas mais difíceis em sistemas distribuídos e até mesmo impossível de se realizar quando são adotadas certas premissas aparentemente 
+	realistas. A principal dificuldade reside na incapacidade de distinguir um “recurso morto” de um recurso insuportavelmente lento.
+	
+	**Middleware**
+	
+	Chamada de procedimentos remotos (RPC – Remote Procedure Call) é uma tecnologia de comunicação entre processos que permite a um processo 
+	chamar um procedimento em outro espaço de endereçamento, geralmente em outro computador, conectado por meio de uma rede de comunicação de dados.
+	O programador não se preocupa com os detalhes da implementação desta interação remota, do ponto de vista do código da aplicação, a chamada se 
+	assemelha às chamadas de procedimentos locais.
+	
+	---> CORBA:
+		CORBA (Common Object Request Broker Architecture) é a arquitetura padrão criada pelo Object Management Group para estabelecer e simplificar 
+		a troca de dados entre sistemas distribuídos heterogêneos. Considerando-se a diversidade de hardwares e softwares existentes, a arquitetura
+		CORBA atua de modo que objetos (componentes de software) possam se comunicar de forma transparente ao usuário, mesmo que seja necessário 
+		interoperar com outro software, em outro sistema operacional e em outra plataforma de desenvolvimento.
+
