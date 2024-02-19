@@ -1,0 +1,108 @@
+Segunda Aula (Aula pós carnaval)
+
+	1. Entrar no site: https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/ 
+	2. Nome da ISO: debian-12.5.0-amd64-netinst.iso
+	3. Entrar no virtual box
+	4. clicar em new
+	5. Adicionar o name: debian
+	
+	
+PROTOCOLO TCP/IP
+
+	1. Aplicação ( HTTP, POP3, SMTP, etc)
+	2. Transporte (TCP E UDP)
+	3. Internet (IP)
+	4. Acesso à rede (ETHERNET, FRAME, RELAY)
+	
+	Quando eu digo acesso a rede, estou mexendo com cabo e placa de rede (entrada para o RJ45);
+	Lembrar que se essa placa de rede não for gigabits, e você tirar uma rede de internet de 1 gigabits, pode esquecer porque seu computador 
+	não vai aguentar;
+	Se o cabo não for cat6 eu estarei perdendo banda larga.
+	TCP e UDP fazem o transporte, o tcp manda dados, o udp manda audio e video (ele não é confiável)
+	
+	Camada de Aplicação: HTTP trabalha na porta 80
+						 HTTPS trabalha na porta 443
+						 DNS trabalha na porta 53
+						 
+	O banco de dados normalmente trabalha na porta 3306.
+	A primeira coisa que eu preciso fazer é trocar a porta padrão que meu banco de dados trabalha quando estiver pensando na minha aplicação.
+	No Brasil varrer uma porta não é crime, já nos EUA é crime. O FBI vai até a sua casa.
+	
+SUMÁRIO
+
+	1. Fundamentos
+		1.1 - Baseado em requisição e resposta: O cliente envia uma requisição HTTP ao servidor, que então processa essa requisição 
+		e retorna uma resposta.
+		Ex: Client Side -----> Communication Channel -----> Server Side
+			Server Side -----> Communication Channel -----> Client Side
+		1.2 - Sem "Estados" (Stateless):
+			As páginas são nomeadas com o uso de padrao chamados URLs (Uniform Resource Locators)
+			A URL é formada por:
+				protocolo - Define o protocolo de aplicação usado na obtenção do documento (por exemplo, HTTP e FTP);
+				host - é o computador onde as informações estão localizadas
+				porta - é utilizada para identificar o programa servidor Web usualmente por 80 (este campo é opicional).
+				caminho (path): indica como encontrar um arquivo onde a informação desejada está localizada.
+			
+			EX: PROTOCOLO://HOST:PORTA/CAMINHO
+			
+			SISTEMAS WEB - SEQUÊNCIA LÓGICA
+			
+			O ping é um protocolo ICMP.
+			
+			1. O usuário digita SITE.
+			2. O navegador pergunta ao DNS qual é o endereço IP de SITE.
+			3. O DNS responder com o IP.
+			4. O navegador estabelece um conexção TCP com a porta 80 em IP.
+			5. Navegador envia um GET solicitando o arquivo no /path
+			6. O servidor SITE envia o arquivo /index.html
+			7. O navegador busca todas as imagens e informações necessárias
+			8. A conexção TCP é encerrada
+			
+			LGPD -> obriga todas as empresas fornecer os logs aos orgãoes de segurança pública (mesmo que criptografado)
+			Ser anônimo é sei o que vc está fazendo, mas eu não sei quem você é;
+						
+			
+		1.3 - Métodos HTTP
+		
+		
+		
+		2. Sem Estados (Stateless)
+		
+		Independencia de Requisições: Em HTTP, cada requisição é considerada uma transação isolada que é independente de qualquer outra requisição.
+		Isso significa que o servidor não mantém nenhum registro das interações anteriores que um cliente teve como ele.
+		Cada requisição é processada sem qualquer conhecimento das requisições anteriores.
+		
+		Gerenciamento de Estados no HTTP: 
+			- Cookies: São pequenos pedaçõs de dados enviados pelo servidor e armazenados no navegador do cliente. 
+		               Eles podem ser usados para rastrear o estado da sessão do usuário.
+			- Tookiens de Sessão:
+			- Parametro de URL e Corpos de Requisição
+			
+		Métodos HTTP:
+			GET -> FINALIDADE: Solicitar um recurso especifico. Apenas 
+			POST:
+			PUT:
+			DELETE:
+			HEAD:
+			OPTIONS:
+	
+	2. Versões
+	
+	HTTP/1.0 E HTTP/1.1:
+	HTTP/2:
+	HTTP/3
+	HTTPS (HTTP Secure)
+	
+	3. Funcionamentos (o professor disse que vai cobrar isso!!!! os códigos! precisamos saber!! )
+	
+	Os códigos de resposta para HTTP são dividos em cinco categorias:
+	
+		1. informativo (100-199)
+		2. sucesso (200-299)
+		3. redirecionamento (300-399)
+		4. erro de cliente (400-499)
+		5. erro do servidor (500-599)
+		
+	4. Cabeçalhos HTTP
+	
+							 
