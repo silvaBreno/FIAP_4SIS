@@ -1,0 +1,46 @@
+Terceira Aula
+
+	Qual é o método que eu vou precisar utilizar quando ele copiar e colar um conteudo do meu site?
+	Como saber qual o IP do meu usuário?
+	O professor disse que vai ensinar a como se faz isso e quais métodos nós utilizamos para COPIAR e COLAR algo do meu site.
+	
+	4. Cabeçalhos HTTP
+	
+	User-Agent: o navegador ou cliente identifica que está fazendo a requisição. No servidor ele já identifica o que estão utilizando.
+	
+	Alguem já tentou comprar uma passagem area? Os developers sabem que você ja entrou mais de uma vez no site e aquela passagem que estava
+	no valor de R$2000, passou a ser R$5000. Ou seja, quando você entrou novamente você já entrou no algoritmo. 
+	O professor indicou mudar o User-Agent ou utilizar VPN para comprar passagens.
+	O certo é comprar na hora que entrou pela primeira vez, ou utilizar outro WiFi.
+	
+
+	Accept: São os tipos de mídia que o cliente pode processar; (Json, Midia, Arquivo, XML)
+	Accept-Language: é linguagem preferida que está sendo utilizada;
+	
+	Location: Usado em respostas com o código de status 3xx para indicar o URL para o qual o cliente deve ser redirecionado. 
+	Eles sabem onde você está.
+	O professo disse que indica as VPNs que não estão assinados o tratado de "xxxx" (o professor esqueceu o nome do tratado).
+	Se você estiver utilizando um VPN de um país que tenha assinado esse tratado, outros países podem perguntam para o país 
+	que "teoricamente" você estava com a VPN e esse país por estar nesse tratado pode dizer de onde saiu. 
+	A VPN que o professor indica é CryptoStorm (comprar utilizando giftcard para não ser rastreável)
+	
+	
+	No google chrome: https://www.deviceinfo.me/ - entrar nesse site
+					  https://browserleaks.com/ - entrar no site
+	
+	no console do debian
+	
+	o d é diretorio e o l é de link
+	o professor vai perguntar qual a finalidade de cada um desses itens
+	
+	o comando: cd --help (ele diz para que server esse comando)
+	para subir a tela tem que usar o seguinte comando: ls --help | less
+	
+	rwx 					rwx					rwx 				--> O r é de read, o w de write e o x é de execute
+	(1°grupo: usuário)  (2°grupo: grupos)  (3°grupo: outros)
+	
+	quando tem o HIFEN quer dizer que o usuario não tem permissão para acessar.
+	
+	para acessar a home: cd home
+	
+	para entrar como aluno entrar su aluno
