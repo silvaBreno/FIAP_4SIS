@@ -1,0 +1,63 @@
+Quarta aula
+
+Primeiro CheckPoint daqui 15 dias - (14/03) (vai cair conceitos básicos sobre sistema distríbuidos, middleware e algumas perguntas sobre arquitetura (cliente e servidores)
+(o middle é uma extensão do sistema operacional^? algo que esta no meio do caminho?)
+
+	Modelos de Arquitetura
+	
+	Em sistemas distribuidos, o principal onbketovo de um modelo de arquitetura é garantir que a estrutura atenda as demandas atuais e, se possível, 
+	as demandas futuras impostas sobre ela
+	
+	Nesse contexto, as maiores preocupações são tornar o sistemas confiáveis.
+	
+	A camada middleware torna todos os sistemas operacionais compatíveis com o software
+	
+	Cadamas lógicas de serviços 
+	
+	- Arquitetura em camadas:
+	
+	- Arquitetura baseada em objetos.
+	
+		Por exemplo os jogos onlines utilizam essa arquitetura (World of Warcraft);
+		Se eu tiver mais usuários, eu vou ter muitos objetos. Se eu tiver poucos usuários, eu vou  ter poucos objetos.
+		Ex: Para cada personagem, eu crio um novo objetos e assim consigo caracterizam e apresentar os personagem por suas características próprias.
+	
+	- Arquitetura centrada em dados:
+	
+		Por exemplo aqui o e-commerce é um grande exemplo, pois a todo momento em um site você vai estar fazendo buscar e procurando informações sobre
+		os produtos e consecutivamente você vai estar sempre precisando acessar os dados de cada produto;
+		Ou seja, temos uma especie de repositorios de dados que é acessado pelos componentes a todo momento.
+		
+	
+	
+	- Arquitetura baseada em eventos.
+	
+		Por exemplo: O Linkedln e o Slack são plataformas que possuem a arquitetura baseada em eventos, pois toda vez que alguem publica algo, isso gera
+		Um evento e vamos ter um barramento de eventos  que faz toda a comunicação entre os componentes e entregam os eventos para os componentes do sistema;
+		Na arquitetura baseada em eventos, processos se comunicam através da propagação de eventos que, eventualmente, também podem transportar dados.
+		No caso de sistemas distribuídos, a propagação de eventos é associada aos sistemas publicar/subscrever (publish/subscriber): processos publicam
+		eventos que só serão enviados aos processos que se subscreveram para receber tais eventos. A principal vantagem de sistemas baseados em 
+		eventos é o baixo acoplamento entre os processos.
+
+		
+		MMQTT
+		
+	- Arquitetura Cliente-Servidor é a arquitetura mais utilizada!
+		
+		O
+		
+		
+		
+	Virtualização
+	
+	A virtualização surgiu como uma forma de separação entre o software e o hardware.
+	Normalmemnte, são instaladas sobre o sistema operacional que, por sua vez é instalado sobre a estrutura física (hardware).
+	
+	A utilização de *clusters de servidores*, computadores interligados entre si, dividindo a carga de processamento, inaugurou 
+	a era dos *upgrades horizontais*: Sempre que fosse necessário atender um número maior de usuários ou processar um volume maior de dados, 
+	adicionar novos computadores ao cluster. Neste modelo, cada um dos computadores do cluster mantém sua própria estrutura de sistema operacional
+	e aplicações.
+	A virtualização possibilitou a abstração do hardware, já que uma camada de software, simulnaod um infraestrutura física, é inserida entre o hardware(real)
+	e o sistema operacional, possibilitando uma separação mais eficiente destas duas camadas.
+
+	
