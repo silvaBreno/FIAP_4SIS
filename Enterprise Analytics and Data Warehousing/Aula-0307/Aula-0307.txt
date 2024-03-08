@@ -1,0 +1,13 @@
+Arquitetura do Fluxo de Dados
+
+	Arquiteturas:
+	
+	DDS	
+	
+	Utilizamos essas de baixo quando precisamos retrabalhar os dados:
+	
+	NDS (interna) + DDS (normalmente user-facing)
+	
+	ODS + DDS
+	
+	
