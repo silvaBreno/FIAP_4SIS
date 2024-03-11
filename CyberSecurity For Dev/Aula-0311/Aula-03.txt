@@ -1,0 +1,86 @@
+login: root
+senha: fiap
+
+1. primeiro passo: fazer a configuração inicial que estao nas fotos
+2. digito ip -br -c a para verificar se placas de redes foram adicionadas
+  (placas de rede internas)
+  enp0S3 (nat)
+  enp0S8 (bridge)
+  enp0S9 (interna fiap)
+  
+3. dps digito para entrar
+	cd /etc/network
+	
+	cd ls
+	
+4. digiar para copiar o arquivo antigo (ou seja o cp interfaces eu copiei para interfaces.old) 
+	cp interfaces interfaces.old
+	
+5. digitar nano interfaces
+
+6. agora vamos editar/configurar a placa interna enp0S9
+
+lá embaico eu digito #placa de rede 3
+
+#placa de rede 3 - interna
+allow-hotplug enp0S9
+iface enp0S9 inet static
+	address 192.168.1.10
+	
+com esse comando eu habilito a placa
+
+dps control+O para salvar com o nome interfaces msm
+dps control+X para sair da edição
+
+
+7.ip -br -c digito para verificar e as placas ainda estão com o status down
+
+8. reiniciar o servico de networking do linux - service networking restart
+
+9. ip -br -c e o status todos status para down
+	
+10. dps eu dou um init 6 para reiniciar
+
+11. ao logar ip -br -c e verifico que mudou o status para UP
+
+12. dps dou apt update para atualizar os pacotes do linux
+13. dps dou apt install apache2 para baixar o apache (o apache 2 é um servidor apache)
+14. dps dar um apt install net-tools para instalar os pacotes de rede (com ele conseguimos verificar o ip sem utilizar o ip -br -c a. Com o nettools instalado eu consigo utilizar o comando "ifconfig")
+15. dps eu utilizo o comando netstat -nltp (função: verificar quais serviços estão online/mostrar as conexões da internet ativas)
+16. dps dar um systemctl stop ssh
+17. com isso só o apache está funcionando 
+18. verifico o status "netstat -nltp"
+19. utilizar para reiniciar o systemctl start ssh 
+20. verifico o status "netstat -nltp"
+21. subir o servidor apache "systemctl start apache2"
+22. verifico o status "netstat -nltp"
+
+23. Feito isso vamos iniciar o kali-linux
+23. tirar o snapshot dps que iniciar a VM
+24. fechar
+25. configurar as placas de rede novamente da mesma forma que fizemos para primeira vm do servidor
+26. adapter 2: bridge // adpater 3: internal nome fiap
+
+27. subir novamente a kali-linux
+28. login kali 
+29. senha kali
+30. na parte superior dps de fazer o login, abrir o terminal (sexto icone no campo superior direito)
+
+31. dps de abrir o power shell digitar: sudo subir
+32. senha: kali (novamente)
+
+33. Se quiser posso utilizar ctrl L para limpar o console
+
+34. verificar as placas eu utilizo o mesmo comando: ip -br -c abrir
+
+	placas: 
+	- eth0
+	- eth1
+	- eth2
+
+35. após refazer os passos e configurar conforme imagem no passo 36, reiniciar a maquina
+36. configurar a maquina "init 6"
+
+37. Dentro do Kali, pingar o servidor que configuramos "ping 192.168.1.10"
+38. Dentro do servidor, pingar o PC cliente que configuramos "ping 192.168.1.20" 
+39.
