@@ -71,7 +71,7 @@ dps control+X para sair da edição
 
 33. Se quiser posso utilizar ctrl L para limpar o console
 
-34. verificar as placas eu utilizo o mesmo comando: ip -br -c abrir
+34. verificar as placas eu utilizo o mesmo comando: ip -br -c a
 
 	placas: 
 	- eth0
