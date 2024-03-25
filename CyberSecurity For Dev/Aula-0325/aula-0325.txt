@@ -1,0 +1,78 @@
+entro nesse arquivo do passo 2 
+
+ la no final do arquivo vou e na frase Options Indexes FollowSymLinks 
+ Eu apago a palavra Indexes e dou control O para salvar com o mesmo nome
+ 
+ 
+ e reiniciar o servidor com o comando:
+ service apache2 restart
+ 
+ 
+dps disso eu preciso mover o arquivo index.html para fora da pasta html com o comando 
+mv index.html /var/www
+
+
+agora eu volto e adiciono a palavra Indexes novamente porque ao pingar no kali o ip 192.168.1.10 deu "Forbbiden" conforme a foto kali1
+cd /etc/apache2
+nano apache2.conf
+
+vo la no final do arquivo novamente e adiciono a palavra Indexes 
+
+Salvo e reinicio o servidor com o comando 
+
+service apache2 restart
+
+quando eu entrar novamente no arquivo e inserir a palavra ele vai mudar ao pingar conforme a foto kali 2
+
+agora tenho que retirar novamente 
+
+dps disso eu entro na pasta cd /etc/apache2/conf-enabled
+
+copio o arquivo q vo trabalhar 
+
+cp security.conf security.conf.old
+
+dps entro no arquivo security.conf
+
+nano security.conf
+
+dentro desse arquivo eu vou trocar o "ServerTokens OS" para "ServerTokens Prod" para minha aplicação trabalhar em modo de produção
+
+
+agora eu reinicio o servidor com o: service apache2 restart
+
+
+e pingo no kali para verificar se sumiu a informação que estou usando o sistema operacional Debian (olhar as fotos kali 3 e kali 4 para verificar a info do sistema operacional sumiu)
+
+agora vou voltar a configuração "ServerTokens OS" lá no arquivo security.conf
+
+e agora tb vou alterar a frase "ServerSignatura On" para "ServerSignatura Off"
+
+vo reiniciar e olhar novamente la no kali oq acontece (olhar a foto do kali 5)
+
+cd /var/log/apache2
+ls
+
+o access.log é onde eu encontro tudo que o servidor faz
+
+para verificar eu dou um cat access.log (passo 6)
+
+para verificar quantos usuarios eu tenho eu digito cat /etc/passwd
+
+tudo q aparecer sao meus usuarios
+
+para contar quantos usuarios eu tenho posso usar o cat /etc/passwd | wc -l
+
+para contar quantas linhas estao escritas no meu access.log : cat access.log | wc -l
+
+
+por padrão o head tras apenas as 10 primeiras linhas: cat /etc/passwd
+
+agora eu quero trazer só duas linhas, eu uso o comando head -n 2 /etc/passwd
+
+agora eu quero ver as duas ultimas linhas, e por padrão o tails ele retorna as 10 ultimas linhas: tail /etc/passwd
+
+agora eu quero ver apenas as duas ultimas do log e eu uso o comando: tail -n 2 /etc/passwd
+
+agora vou para o acesslog e pego só as ultimas 4 linhas usando: head -n 4 access.log (olhar a foto passo 9)
+
